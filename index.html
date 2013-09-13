@@ -6,7 +6,7 @@
     <script type="text/javascript" charset="utf-8" src="phonegap-1.2.0.js"></script>
     <script src="http://jsconsole.com/remote.js?FAE031CD-74A0-46D3-AE36-757BAB262BEA"></script>
     <script type="text/javascript" charset="utf-8">
-
+	 console.log("test");
     // Wait for PhoneGap to load
     //
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -55,6 +55,7 @@
     function onDeviceReady() {
         var db = window.openDatabase("Database", "1.0", "PhoneGap Demo", 200000);
         db.transaction(populateDB, errorCB, successCB);
+        console.log("test on deviceReady");
     }
 
     </script>
